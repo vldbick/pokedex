@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid black;
+
+    border-radius: 15px;
+    background-color: rgb(110, 242, 180);
+
+    width: 180px;
+    height: 250px;
+
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.pokId {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+}
+
+.activeCard {
+    scale: 0.9;
+}
+
+.img {
+    text-align: center;
+    height: 55%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.img img {
+    height: 90%;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgba(214, 218, 209, 0.575);
+    /* border: 1px solid black; */
+
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.types {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}

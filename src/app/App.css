@@ -1,0 +1,98 @@
+
+.main {
+  margin: 0 auto;
+  padding: 0 150px;
+  max-width: 1440px;
+  display: flex;
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+#selectPokemon {
+  display: none;
+}
+
+.normal {
+  background-color: rgb(141, 125, 94);
+}
+
+.fighting {
+  background-color: rgb(207, 84, 244);
+}
+
+.flying {
+  background-color: rgb(180, 180, 249);
+}
+
+.poison {
+  background-color: rgb(3, 255, 3);
+}
+
+.ground {
+  background-color: rgb(99, 78, 12);
+}
+
+.rock {
+  background-color: gray;
+}
+
+.bug {
+  background-color: rgb(117, 169, 5);
+}
+
+.ghost {
+  background-color: rgba(227, 225, 225, 0.833);
+}
+
+.steel {
+  background-color: rgb(209, 220, 220);
+}
+
+.fire {
+  background-color: rgb(253, 62, 62);
+}
+
+.water {
+  background-color: rgb(80, 185, 224);
+}
+
+.grass {
+  background-color: rgb(124, 255, 124);
+}
+
+.electric {
+  background-color: rgb(249, 249, 82);
+}
+
+.psychic {
+  background-color: antiquewhite;
+}
+
+.ice {
+  background-color: rgb(0, 17, 255);
+}
+
+.dragon {
+  background-color: rgba(255, 81, 0, 0.84);
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.fairy {
+  background-color: rgb(255, 209, 197);
+}
+
+.unknown {
+  background-color: antiquewhite;
+}
+
+.shadow {
+  background-color: rgba(76, 76, 76, 0.758);
+}

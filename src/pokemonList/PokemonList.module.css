@@ -1,0 +1,27 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    justify-content: center;
+}
+
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(41, 170, 250);
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 25px auto;
+    width: 80%;
+    height: 60px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
