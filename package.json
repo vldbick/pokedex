@@ -1,6 +1,6 @@
 {
   "homepage": "https://vldbick.github.io/pokedex",
-  "name": "vldbick.github.io",
+  "name": "pokedex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
