@@ -13,6 +13,12 @@ a {
 
 #selectPokemon {
   display: none;
+  background-color: rgba(0, 0, 0, 0.53);
+  width: 100vw;
+  height: 150vh;
+
+  position: fixed;
+  top: 0;
 }
 
 .normal {
