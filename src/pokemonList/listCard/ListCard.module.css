@@ -52,3 +52,9 @@
     gap: 20px;
     padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 250px;
+    }
+}

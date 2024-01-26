@@ -1,8 +1,129 @@
 .card {
+    position: relative;
+    overflow: hidden;
     border: 3px solid black;
     border-radius: 15px;
     background-color: rgb(183, 214, 194);
-    
-    width: 60vw;
+
+    width: 600px;
     height: 400px;
+
+    transition: 0.3s;
+}
+
+.decor {
+    position: absolute;
+    top: -20%;
+    right: -30%;
+    height: 140%;
+    width: 75%;
+    border-radius: 50%;
+    background-color: rgb(192, 199, 154);
+    z-index: 1;
+}
+
+.cardFlex {
+    position: relative;
+    z-index: 5;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFlex>div {
+    flex-basis: 50%;
+}
+
+.rCont {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+    height: 50%;
+}
+
+.img img {
+    height: 100%;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.types div {
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    z-index: 5;
+    color: rgb(15, 49, 46);
+    height: 12%;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-decoration: underline;
+    padding-top: 10px;
+
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.stats table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.stats td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.stats td:last-child {
+    text-align: right;
+    width: 50px;
+}
+
+.stats td:first-child {
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 25px;
+    }
+
+    .stats {
+        scale: 0.7;
+        font-size: 15px;
+    }
+
+    .card {
+        width: 80%;
+        height: 300px;
+    }
+
+    .rCont {
+        scale: 0.8;
+    }
+
 }
