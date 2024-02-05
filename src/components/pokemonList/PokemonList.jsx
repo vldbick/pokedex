@@ -6,16 +6,19 @@ import axios from 'axios';
 const PokemonList = () => {
     const [pokemonList, setPokemonList] = useState([]);
     const [nextPageUrl, setNextPageUrl] = useState(null);
-
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async (url) => {
             try {
+                setLoading(true);
                 const response = await axios.get(url);
                 setPokemonList(response.data.results);
                 setNextPageUrl(response.data.next);
             } catch (error) {
                 console.error('Ошибка при получении данных:', error);
+            } finally {
+                setLoading(false);
             }
         };
         const API = sessionStorage.getItem('API');
@@ -25,11 +28,14 @@ const PokemonList = () => {
     const handleLoadMore = () => {
         const fetchData = async (url) => {
             try {
+                setLoading(true);
                 const response = await axios.get(url);
                 setPokemonList((prevList) => [...prevList, ...response.data.results]);
                 setNextPageUrl(response.data.next);
             } catch (error) {
                 console.error('Ошибка при получении данных:', error);
+            } finally {
+                setLoading(false);
             }
         };
         if (nextPageUrl) {
@@ -45,9 +51,9 @@ const PokemonList = () => {
                 ))}
             </div>
             {nextPageUrl && (
-                <div className={s.more} onClick={handleLoadMore}>
-                    Load More
-                </div>
+                <button disabled={loading} className={s.more} onClick={handleLoadMore}>
+                    {loading ? 'Loading...' : 'Load More'}
+                </button>
             )}
         </div>
     );
